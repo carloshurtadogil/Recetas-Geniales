@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './components/layout/Navbar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css';
+import corgi from './assets/images/corgi.png';
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <Navbar />
+          <div className="App">
+            <h1>My First Website</h1>
+    
+            <img src={corgi} alt="Corgi" width={500} height={500} mode='fit' />
+
+            <p>Just had to celebrate with a corgi</p>
+          </div>
+        </div>
+      </BrowserRouter>
+    );
+  }
+};
 
 export default App;
