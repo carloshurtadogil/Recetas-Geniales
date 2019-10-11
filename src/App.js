@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Dashboard from './components/dashboard/Dashboard';
 import Navbar from './components/layout/Navbar';
+import RecipeDetails from './components/recipes/RecipeDetails';
 
 import './App.css';
-import corgi from './assets/images/corgi.png';
 
 class App extends Component {
   render() {
@@ -11,13 +13,11 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Navbar />
-          <div className="App">
-            <h1>My First Website</h1>
-    
-            <img src={corgi} alt="Corgi"  />
-
-            <p>Just had to celebrate with a corgi</p>
-          </div>
+          
+          <Switch>
+            <Route exact path='/' component={ Dashboard } />
+            <Route path='/recipe/:id' component={ RecipeDetails } />
+          </Switch>
         </div>
       </BrowserRouter>
     );
