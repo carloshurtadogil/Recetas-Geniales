@@ -14,7 +14,7 @@ class App extends Component {
           <div className="App">
             <h1>My First Website</h1>
     
-            <img src={corgi} alt="Corgi" width={500} height={500} mode='fit' />
+            <img src={corgi} alt="Corgi"  />
 
             <p>Just had to celebrate with a corgi</p>
           </div>
