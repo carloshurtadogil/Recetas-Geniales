@@ -1,15 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 const SignedInLinks = () => {
     return (
-        <ul className='right'>
-            <li><NavLink to='/'>Hear No Corgi</NavLink></li>
+        <Navbar.Collapse className='justify-content-end'>
+            <Nav className="mr-auto">
+                <Nav.Link href='/'>Hear No Corgi</Nav.Link>
 
-            <li><NavLink to='/'>See No Corgi</NavLink></li>
-            
-            <li><NavLink to='/' className='btn btn-floating pink lighten-1'>CH</NavLink></li>
-        </ul>
+                <Nav.Link href='/'>See No Corgi</Nav.Link>
+
+                <Nav.Link to='/' className='btn btn-default btn-circle'>CH</Nav.Link>
+            </Nav>
+        </Navbar.Collapse>
     );
 };
 
