@@ -25,7 +25,7 @@ class SignIn extends Component {
                     className='white'
                     onSubmit={ this.submitHandler }
                 >
-                    <h5 className='grey-text text-darken-3' style={{paddingBottom: 30}}>Sign In</h5>
+                    <h3 className='grey-text text-darken-3' style={{paddingBottom: 30}}>Sign In</h3>
 
                     <div className='input-field'>
                         <label htmlFor='email'>Email</label>
