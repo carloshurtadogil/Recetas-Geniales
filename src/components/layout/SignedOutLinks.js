@@ -1,13 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 const SignedOutLinks = () => {
     return (
-        <ul className='right'>
-            <li><NavLink to='/'>Signup</NavLink></li>
+        <Navbar.Collapse className='justify-content-end'>
+            <Nav className="mr-auto">
+                <Nav.Link href='/signup'>Sign Up</Nav.Link>
 
-            <li><NavLink to='/'>Login</NavLink></li>
-        </ul>
+                <Nav.Link href='/signin'>Sign In</Nav.Link>
+            </Nav>
+        </Navbar.Collapse>
     );
 };
 
