@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
     Content, 
     Drawer,
@@ -11,7 +11,18 @@ import Main from './main';
 import profile from './assets/logos/crop.png';
 import './App.css';
 
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+
+    return {
+        width,
+        height
+    };
+};
+
 function App() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
     const icon = (
         <span>
             <Link to='/' style={{ color: 'white', textDecoration: 'none', alignSelf: 'auto'  }}>
@@ -29,6 +40,15 @@ function App() {
         </span>
     );
 
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <div className="landing-content">
             <Layout>
@@ -40,14 +60,16 @@ function App() {
                     </Navigation>
                 </Header>
 
-                { /** */
-                <Drawer title="Carlos Hurtado" >
-                    <Navigation>
-                        <Link to='/resume'>Resume</Link>
-                        
-                        <Link to='/contact'>Contact</Link>
-                    </Navigation>
-                </Drawer>
+                {  windowDimensions.width < 760 
+                    ?
+                        <Drawer title="Carlos Hurtado" >
+                            <Navigation>
+                                <Link to='/resume'>Resume</Link>
+                                
+                                <Link to='/contact'>Contact</Link>
+                            </Navigation>
+                        </Drawer>
+                    : null
                 }
 
                 <Content >
