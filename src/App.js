@@ -32,7 +32,7 @@ function App() {
     return (
         <div className="landing-content">
             <Layout>
-                <Header className='header-color' title={icon}  scroll  >
+                <Header className='header-color' title={icon}  scroll waterfall  >
                     <Navigation>
                         <Link to='/resume'>Resume</Link>
                         
