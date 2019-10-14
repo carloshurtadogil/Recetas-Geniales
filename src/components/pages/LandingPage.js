@@ -1,6 +1,7 @@
 import  React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 import { Cell, Grid } from 'react-mdl';
+import { MDBContainer, MDBFooter } from 'mdbreact';
 
 import portrait from '../../assets/images/portrait.jpeg';
 
@@ -43,7 +44,16 @@ class LandingPage extends Component {
                                 </a>
                             </div>
                         </div>
-                        <div style={{ paddingBottom: '100px' }}></div>
+                        
+                        <div >
+                            <MDBFooter className="font-small pt-4 mt-4">
+                                <div className="footer text-center py-3">
+                                    <MDBContainer fluid>
+                                        Designed &#38; Built by Carlos Hurtado
+                                    </MDBContainer>
+                                </div>
+                            </MDBFooter>
+                        </div>
                     </Cell>
                 </Grid>
             </div>

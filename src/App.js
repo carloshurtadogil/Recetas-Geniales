@@ -4,7 +4,7 @@ import {
     Drawer,
     Header, 
     Layout, 
-    Navigation 
+    Navigation
 } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Main from './main';
@@ -32,7 +32,7 @@ function App() {
     return (
         <div className="landing-content">
             <Layout>
-                <Header className='header-color' title={icon} scroll waterfall hideTop>
+                <Header className='header-color' title={icon}  scroll  >
                     <Navigation>
                         <Link to='/resume'>Resume</Link>
                         
@@ -54,7 +54,7 @@ function App() {
                     <div className="page-content" />
                     
                     <Main />
-                </Content>          
+                </Content>       
             </Layout>
         </div>
     );
