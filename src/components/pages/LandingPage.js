@@ -7,7 +7,7 @@ import portrait from '../../assets/images/portrait.jpeg';
 class LandingPage extends Component {
     render() {
         return (
-            <div style={{ width: '100%', margin: 'auto' }}>
+            <div style={{ width: '100%',  margin: 'auto', display: 'flex' }} className='landing-div'>
                 <Grid className='landing-grid'>
                     
                     <Cell col={12}>
@@ -43,6 +43,7 @@ class LandingPage extends Component {
                                 </a>
                             </div>
                         </div>
+                        <div style={{ paddingBottom: '100px' }}></div>
                     </Cell>
                 </Grid>
             </div>

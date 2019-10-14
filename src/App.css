@@ -2,7 +2,6 @@
   height: 500px;
   padding-top: 5em;
   padding-bottom: 5em;
-  z-index: 1;
 }
 
 .banner-text {
@@ -35,13 +34,22 @@
   background: #360033;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.landing-div {
+  background: #360033;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .landing-grid {
   background: #360033;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  flex: 1;
+  
   height: 100%;
   left: 0;
   scroll-behavior: smooth;
@@ -78,7 +86,6 @@
   justify-content: center;
   margin: auto;
   padding-top: 2em;
-  position: fixed;
   width: 100%;
 }
 
