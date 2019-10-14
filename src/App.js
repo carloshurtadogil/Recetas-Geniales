@@ -11,6 +11,7 @@ import Main from './main';
 import profile from './assets/logos/crop.png';
 import './App.css';
 
+
 function App() {
     const icon = (
         <span>
@@ -40,14 +41,14 @@ function App() {
                     </Navigation>
                 </Header>
 
-                { /** */
-                <Drawer title="Carlos Hurtado" >
-                    <Navigation>
-                        <Link to='/resume'>Resume</Link>
-                        
-                        <Link to='/contact'>Contact</Link>
-                    </Navigation>
-                </Drawer>
+                {  
+                    <Drawer title="Carlos Hurtado" >
+                        <Navigation>
+                            <Link to='/resume'>Resume</Link>
+                            
+                            <Link to='/contact'>Contact</Link>
+                        </Navigation>
+                    </Drawer>
                 }
 
                 <Content >
