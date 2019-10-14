@@ -1,19 +1,19 @@
 {
-  "short_name": "Recipe App",
-  "name": "Food of Life",
+  "short_name": "React App",
+  "name": "Personal portfolio",
   "icons": [
     {
-      "src": "sunicon.png",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "image/x-icon"
     },
     {
-      "src": "sun192.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "sun512.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

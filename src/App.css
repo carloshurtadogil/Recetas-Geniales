@@ -1,28 +1,118 @@
-.App {
-  text-align: center;
+.avatar-img {
+  height: 500px;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
+.banner-text {
+  background-color: black;
+  border-radius: 10px;
+  margin: 0 auto;
+  opacity: .8;
+  width: 75%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.banner-text h1 {
   color: white;
+  font-size: 66px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #09d3ac;
+.banner-text hr {
+  border-top: 5px dotted white;
+  margin: auto;
+  width: 50%;
 }
 
-img {
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.header-color {
+  background: #360033;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid {
+  background: #360033;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100%;
+  left: 0;
+  scroll-behavior: smooth;
+  text-align: center;
+  top: 0;
   width: 100%;
-  height: auto;
-  max-width: 30%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 15%;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+
+/*Resume Page css*/
+
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
+
+/* Contact Page css*/
+
+.contact-body {
+  height: 100%;
+  justify-content: center;
+  margin: auto;
+  padding-top: 2em;
+  position: fixed;
+  width: 100%;
+}
+
+.contact-grid {
+  background: white;
+  color: black;
+  height: 550px;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.contact-grid h2 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  margin: auto;
+  width: 50%;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+}
+
+.contact-links i {
+  color: black;
+  font-size: 66px;
+  padding-right: 5rem;
+}
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
 }

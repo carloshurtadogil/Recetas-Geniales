@@ -1,33 +1,73 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import Dashboard from './components/dashboard/Dashboard';
-import NavbarComponent from './components/layout/NavbarComponent';
-import CreateRecipe from './components/recipes/CreateRecipe';
-import RecipeDetails from './components/recipes/RecipeDetails';
-import SignIn from './components/auth/SignIn';
-import SignUp from './components/auth/SignUp';
-
+import React from 'react';
+import { 
+    Content, 
+    Drawer,
+    Header, 
+    Layout, 
+    Navigation 
+} from 'react-mdl';
+import { Link } from 'react-router-dom';
+import Main from './main';
+import profile from './assets/logos/crop.png';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <div>
-          <NavbarComponent />
-          
-          <Switch>
-            <Route exact path='/' component={ Dashboard } />
-            <Route path='/recipe/:id' component={ RecipeDetails } />
-            <Route path='/signin' component={ SignIn } />
-            <Route path='/signup' component={ SignUp } />
-            <Route path='/create' component={ CreateRecipe } />
-          </Switch>
-        </div>
-      </BrowserRouter>
+function App() {
+    const icon = (
+        <span>
+            <Link to='/' style={{ color: 'white', textDecoration: 'none', alignSelf: 'auto'  }}>
+                {
+                <span>
+                    <img 
+                        src={profile} 
+                        alt='Carloss Initial'
+                  
+                        style={{height: '50px'}}
+                    />
+                </span>
+                }
+            </Link>
+        </span>
     );
-  }
-};
+
+    return (
+        <div className="landing-content">
+            <Layout>
+                <Header className='header-color' title={icon} scroll waterfall hideTop>
+                    <Navigation>
+                        <Link to='/resume'>Resume</Link>
+                        
+                        <Link to='/contact'>Contact</Link>
+                    </Navigation>
+                </Header>
+
+                { /** */
+                <Drawer title="Carlos Hurtado" >
+                    <Navigation>
+                        <Link to='/resume'>Resume</Link>
+                        
+                        <Link to='/contact'>Contact</Link>
+                    </Navigation>
+                </Drawer>
+                }
+
+                <Content >
+                    <div className="page-content" />
+                    
+                    <Main />
+                </Content>          
+            </Layout>
+        </div>
+    );
+}
 
 export default App;
+
+/**
+<Link to='/resume'>Resume</Link>
+
+                        <Link to='/about'>About Me</Link>
+                        
+                        <Link to='/projects'>Projects</Link>
+                        
+                        <Link to='/contact'>Contact</Link>
+ */
