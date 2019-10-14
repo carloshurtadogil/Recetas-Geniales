@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Cell, Grid } from 'react-mdl';
 
+//Skills component
 class Skills extends Component {
     render() {
         return (
