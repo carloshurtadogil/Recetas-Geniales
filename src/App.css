@@ -68,8 +68,8 @@
 .social-links {
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  width: 15%;
+  margin: 0 auto;
+  width: 297px;
 }
 
 .social-links i {

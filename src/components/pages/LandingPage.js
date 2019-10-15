@@ -6,7 +6,31 @@ import { MDBContainer, MDBFooter } from 'mdbreact';
 import amsterdam from '../../assets/images/amsterdam.JPG';
 
 class LandingPage extends Component {
+    constructor() {
+        super();
+        this.state = {
+            width: window.innerWidth,
+        };
+    }
+
+    componentWillMount() {
+        window.addEventListener('resize', this.handleWindowSizeChange);
+    }
+    
+    // make sure to remove the listener
+    // when the component is not mounted anymore
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowSizeChange);
+    }
+    
+    handleWindowSizeChange = () => {
+        this.setState({ width: window.innerWidth });
+    };
+
     render() {
+        //const { width } = this.state;
+        //const isMobile = width <= 500;
+
         return (
             <div style={{ width: '100%',  margin: 'auto', display: 'flex' }} className='landing-div'>
                 <Grid className='landing-grid'>

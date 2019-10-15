@@ -14,7 +14,7 @@ class Resume extends Component {
             <div>
                 <Grid>
                     <Cell col={4}>
-                        <div style={{ textAlign: 'center' }}>
+                        <div style={{ textAlign: 'center', paddingTop: '30px' }}>
                             <img 
                                 src={ portrait }
                                 alt='Carlos Hurtado'
