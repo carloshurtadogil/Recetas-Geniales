@@ -68,9 +68,7 @@ class Resume extends Component {
                         
                         <h2>Key Skills</h2>
 
-                        <Cell col={4} >
-                            <Skills skill='JavaScript'/>
-                        </Cell>
+                        <Skills/>
                     </Cell>
                 </Grid>
             </div>

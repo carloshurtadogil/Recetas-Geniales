@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap';
 import { Cell, Grid } from 'react-mdl';
 import { MDBContainer, MDBFooter } from 'mdbreact';
 
-import portrait from '../../assets/images/portrait.jpeg';
+import amsterdam from '../../assets/images/amsterdam.JPG';
 
 class LandingPage extends Component {
     render() {
@@ -13,7 +13,7 @@ class LandingPage extends Component {
                     
                     <Cell col={12}>
                         <Image 
-                            src={ portrait }
+                            src={ amsterdam }
                             alt='Portrait of Carlos Hurtado'
                             className='avatar-img'
                             roundedCircle
