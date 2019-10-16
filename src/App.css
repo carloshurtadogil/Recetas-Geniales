@@ -167,3 +167,14 @@
 .zoom:hover {
   transform: scale(1.3); 
 }
+
+.zoom-s {
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #27221F;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom-s:hover {
+  transform: scale(1.1); 
+}
