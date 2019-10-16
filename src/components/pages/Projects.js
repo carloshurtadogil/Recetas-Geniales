@@ -10,7 +10,11 @@ import vevent from '../../assets/images/volunesia/v-event.png';
 import vsign from '../../assets/images/volunesia/v-sign.png';
 
 /**All Traqueur Screenshots*/
-import tsign from '../../assets/images/traqueur/t-sign.png';
+import tgen from '../../assets/images/traqueur/t-gen.png';
+import thome from '../../assets/images/traqueur/t-home.png';
+import tmain from '../../assets/images/traqueur/t-main.png';
+import tmap from '../../assets/images/traqueur/t-map.png';
+import tsign from '../../assets/images/traqueur/t-sign.png'; 
 
 
 //Component to showcase most recent and proudest accomplishments
@@ -83,7 +87,8 @@ class Projects extends Component {
                             <div className='banner-text'>
                                 <article style={{fontSize: '10'}}>
                                     In my quest to learn as many technologies as possible, I stepped out of my comfort zone to 
-                                    develop a new mobile application with React Native. This MERN-stack mobile app serves a testament to
+                                    develop a new mobile application with React Native. Traqueur is simple mobile application that tracks and 
+                                    records a user's movements, then displays their path on a map. This MERN-stack mobile app serves a testament to
                                     my abilities as a developer and a reminder that nothing is impossible, so long as you put in the effort.
                                 </article>
 
@@ -104,16 +109,16 @@ class Projects extends Component {
 
                     <Grid className='project-grid project-img'>
                         <Cell col={3}>
-                            <Image src={vmain} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
+                            <Image src={tmain} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={vhome} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
+                            <Image src={thome} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={vprofile} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
+                            <Image src={tmap} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={vevent} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
+                            <Image src={tgen} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
                         </Cell>
                     </Grid>
                 </div>
