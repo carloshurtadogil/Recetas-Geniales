@@ -36,6 +36,8 @@ function App() {
                 <Header className='header-color' title={icon}  scroll waterfall  >
                     <Navigation>
                         <Link to='/resume'>Resume</Link>
+
+                        <Link to='/projects'>Projects</Link>
                         
                         <Link to='/contact'>Contact</Link>
                     </Navigation>
@@ -44,7 +46,11 @@ function App() {
                 {  
                     <Drawer title="Carlos Hurtado" >
                         <Navigation>
+                            <Link to='/'>Home</Link>
+
                             <Link to='/resume'>Resume</Link>
+
+                            <Link to='/projects'>Projects</Link>
                             
                             <Link to='/contact'>Contact</Link>
                         </Navigation>
