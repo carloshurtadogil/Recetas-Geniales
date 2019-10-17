@@ -28,8 +28,6 @@ class LandingPage extends Component {
 
                             <hr />
 
-                            <p>Solution-oriented Computer Scientist seeking a software developer position. </p>
-
                             <div className='social-links'>
                                 <Grid style={{ justifyContent: 'center' }}>
                                     <Cell col={4}>
