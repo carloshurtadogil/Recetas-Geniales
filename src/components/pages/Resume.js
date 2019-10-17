@@ -37,7 +37,7 @@ class Resume extends Component {
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 
                         <h5>Email</h5>
-                        <Link to='mailto:carloshurtado219@gmail.com'>carloshurtado219@gmail.com</Link>
+                        <a href='mailto:carloshurtado219@gmail.com'>carloshurtado219@gmail.com</a>
 
                         <h5>Web</h5>
                         <Link to='/'>carlos-hurtado.com</Link>
