@@ -4,7 +4,6 @@ import { Col, ListGroup, Row, Tab } from 'react-bootstrap';
 //Experience component for all jobs worked and their details
 class Experience extends Component {
     renderLists(list) {
-        console.log(list);
         if (list) {
             return (
                 <ul>

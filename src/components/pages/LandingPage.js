@@ -12,12 +12,16 @@ class LandingPage extends Component {
                 <Grid className='landing-grid'>
                     
                     <Cell col={12}>
-                        <Image 
-                            src={ amsterdam }
-                            alt='Portrait of Carlos Hurtado'
-                            className='avatar-img'
-                            roundedCircle
-                        />
+                        <Grid style={{ justifyContent: 'center' }}>
+                            <Cell col={3}>
+                                <Image 
+                                    src={ amsterdam }
+                                    alt='Portrait of Carlos Hurtado'
+                                    className='avatar-img'
+                                    roundedCircle
+                                />
+                            </Cell>
+                        </Grid>
 
                         <div className='banner-text'>
                             <h1>Software Developer</h1>
@@ -27,21 +31,29 @@ class LandingPage extends Component {
                             <p>Solution-oriented Computer Scientist seeking a software developer position. </p>
 
                             <div className='social-links'>
+                                <Grid style={{ justifyContent: 'center' }}>
+                                    <Cell col={4}>
+                                        {/** LinkedIn */}
+                                        <a href='https://linkedin.com/in/carlos-hurtado-046246143/' rel='noopener noreferrer' target='_blank'>
+                                            <i className='fa fa-linkedin-square' aria-hidden='true' />
+                                        </a>
 
-                                {/** LinkedIn */}
-                                <a href='https://linkedin.com/in/carlos-hurtado-046246143/' rel='noopener noreferrer' target='_blank'>
-                                    <i className='fa fa-linkedin-square' aria-hidden='true' />
-                                </a>
+                                    </Cell>
 
-                                {/** Github */}
-                                <a href='https://github.com/carloshurtadogil' rel='noopener noreferrer' target='_blank'>
-                                    <i className='fa fa-github-square' aria-hidden='true' />
-                                </a>
+                                    <Cell col={4}>
+                                        {/** Github */}
+                                        <a href='https://github.com/carloshurtadogil' rel='noopener noreferrer' target='_blank'>
+                                            <i className='fa fa-github-square' aria-hidden='true' />
+                                        </a>
+                                    </Cell>
 
-                                {/** Email */}
-                                <a href='mailto: carloshurtado219@gmail.com' rel='noopener noreferrer' target='_blank'>
-                                    <i className='fa fa-envelope-square' aria-hidden='true' />
-                                </a>
+                                    <Cell col={4}>
+                                        {/** Email */}
+                                        <a href='mailto: carloshurtado219@gmail.com' rel='noopener noreferrer' target='_blank'>
+                                            <i className='fa fa-envelope-square' aria-hidden='true' />
+                                        </a>
+                                    </Cell>
+                                </Grid>
                             </div>
                         </div>
                     </Cell>

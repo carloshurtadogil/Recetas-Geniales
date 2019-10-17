@@ -16,11 +16,15 @@ class Resume extends Component {
                 <Grid>
                     <Cell col={4}>
                         <div style={{ textAlign: 'center', paddingTop: '30px' }}>
-                            <img 
-                                src={ portrait }
-                                alt='Carlos Hurtado'
-                                style={{ height: '400px', borderRadius: '25%' }}
-                            />
+                            <Grid>
+                                <Cell col={12}>
+                                    <img 
+                                        src={ portrait }
+                                        alt='Carlos Hurtado'
+                                        style={{ width: '100%', borderRadius: '25%' }}
+                                    />
+                                </Cell>
+                            </Grid>
                         </div>
 
                         <h2 style={{ paddingTop: '2em' }}>Carlos Hurtado</h2>
