@@ -43,14 +43,17 @@ class Projects extends Component {
                                 <article style={{fontSize: '10'}}>
                                     A group project for my senior software engineering course inspired by our 
                                     collective appreciation of the charitable work done by a group member.
-                                    Volunesia is a mobile platform designed to connect prospective volunteers
+                                    <span>
+                                        <i> Volunesia </i>
+                                    </span>
+                                    is a mobile platform designed to connect prospective volunteers
                                     with nonprofit organizations for events. My group used the Agile methodology
                                     during the development of
                                     <span>
                                         <i> Volunesia</i>
                                     </span>
                                     , using Waffle.io to host our Kanban board and our professor as the client during
-                                    our sprint retrospective. 
+                                    our sprint meetings. 
                                 </article>
 
                                 <hr />
