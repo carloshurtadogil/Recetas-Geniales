@@ -1,6 +1,7 @@
 import  React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 import { Cell, Grid } from 'react-mdl';
+import LazyLoad from 'react-lazyload';
 
 import amsterdam from '../../assets/images/amsterdam.JPG';
 
@@ -14,12 +15,14 @@ class LandingPage extends Component {
                     <Cell col={12}>
                         <Grid style={{ justifyContent: 'center' }}>
                             <Cell col={3}>
-                                <Image 
-                                    src={ amsterdam }
-                                    alt='Portrait of Carlos Hurtado'
-                                    className='avatar-img'
-                                    roundedCircle
-                                />
+                                <LazyLoad height={'100%'} once>
+                                    <Image 
+                                        src={ amsterdam }
+                                        alt='Portrait of Carlos Hurtado'
+                                        className='avatar-img'
+                                        roundedCircle
+                                    />
+                                </LazyLoad>
                             </Cell>
                         </Grid>
 
