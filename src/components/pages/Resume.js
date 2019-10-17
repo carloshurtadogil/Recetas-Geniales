@@ -1,4 +1,5 @@
 import  React, { Component } from 'react';
+import Badge  from 'react-bootstrap/Badge';
 import { Link } from 'react-router-dom';
 import { Cell, Grid } from 'react-mdl';
 import Education from '../items/Education';
@@ -14,12 +15,16 @@ class Resume extends Component {
             <div>
                 <Grid>
                     <Cell col={4}>
-                        <div style={{ textAlign: 'center' }}>
-                            <img 
-                                src={ portrait }
-                                alt='Carlos Hurtado'
-                                style={{ height: '400px', borderRadius: '25%' }}
-                            />
+                        <div style={{ textAlign: 'center', paddingTop: '30px' }}>
+                            <Grid>
+                                <Cell col={12}>
+                                    <img 
+                                        src={ portrait }
+                                        alt='Carlos Hurtado'
+                                        style={{ width: '100%', borderRadius: '25%' }}
+                                    />
+                                </Cell>
+                            </Grid>
                         </div>
 
                         <h2 style={{ paddingTop: '2em' }}>Carlos Hurtado</h2>
@@ -35,7 +40,9 @@ class Resume extends Component {
                         <Link to='mailto:carloshurtado219@gmail.com'>carloshurtado219@gmail.com</Link>
 
                         <h5>Web</h5>
-                        <Link to='https://carlos-hurtado.com'>carlos-hurtado.com</Link>
+                        <Link to='/'>carlos-hurtado.com</Link>
+                        <br/>
+                        <Badge variant="warning">Hosted on AWS</Badge>
 
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
                         
@@ -68,9 +75,7 @@ class Resume extends Component {
                         
                         <h2>Key Skills</h2>
 
-                        <Cell col={4} >
-                            <Skills skill='JavaScript'/>
-                        </Cell>
+                        <Skills/>
                     </Cell>
                 </Grid>
             </div>
