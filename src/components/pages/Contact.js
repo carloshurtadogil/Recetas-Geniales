@@ -34,14 +34,14 @@ class Contact extends Component {
                                 <ListItem>
                                     <ListItemContent style={{ fontFamily: 'Anton', fontSize: '20px' }}>
                                         <i className='fa fa-envelope' aria-hidden='true' />
-                                        <a href='mailto:carloshurtado219@gmail.com' style={{color: 'black'}}>carloshurtado219@gmail.com</a>
+                                        <a href='mailto:carloshurtado219@gmail.com' rel='noopener noreferrer' target='_blank'>carloshurtado219@gmail.com</a>
                                     </ListItemContent>
                                 </ListItem>
 
                                 <ListItem>
                                     <ListItemContent style={{ fontFamily: 'Anton', fontSize: '20px' }}>
                                         <i className='fa fa-github' aria-hidden='true' />
-                                        <a href='https://github.com/carloshurtadogil' style={{color: 'black'}} rel='noopener noreferrer' target='_blank'>
+                                        <a href='https://github.com/carloshurtadogil'  rel='noopener noreferrer' target='_blank'>
                                             github.com/carloshurtadogil
                                         </a>
                                     </ListItemContent>
@@ -50,7 +50,7 @@ class Contact extends Component {
                                 <ListItem>
                                     <ListItemContent style={{ fontFamily: 'Anton', fontSize: '20px' }}>
                                         <i className='fa fa-linkedin' aria-hidden='true' />
-                                        <a href='https://www.linkedin.com/in/carlos-hurtado-046246143/' style={{color: 'black'}}>linkedin.com/in/carlos-hurtado-046246143/</a>
+                                        <a href='https://www.linkedin.com/in/carlos-hurtado-046246143/' rel='noopener noreferrer' target='_blank'>carlos-hurtado-046246143</a>
                                     </ListItemContent>
                                 </ListItem>
                             </List>

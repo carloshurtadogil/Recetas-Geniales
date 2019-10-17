@@ -17,12 +17,3 @@ const Main = () => {
 };
 
 export default Main;
-
-/**
-
-<Route exact path='/' component={ LandingPage } />
-            <Route path='/about' component={ AboutMe } />
-            <Route path='/contact' component={ Contact } />
-            <Route path='/projects' component={ Projects } />
-            <Route path='/resume' component={ Resume } />
- */

@@ -30,7 +30,7 @@ class Projects extends Component {
         return (
             <div>
                 {/** VOLUNESIA */}
-                <div style={{ backgroundColor: '#fff3e6', width: '100%', margin: 'auto', paddingTop:'1em', paddingBottom: '2em' }}>
+                <div style={{  width: '100%', margin: 'auto', paddingTop:'1em', paddingBottom: '2em' }}>
                     <Grid className='project-grid'>
                         <Cell col={4}>
                             <Image src={vsign} alt='Volunesia' style={{width: '100%'}}/>
@@ -91,7 +91,7 @@ class Projects extends Component {
 
 
                 {/** TRAQUEUR */}
-                <div style={{ backgroundColor: 'white', width: '100%', margin: 'auto', paddingTop:'1em', paddingBottom: '2em' }}>
+                <div className='project-div' >
                     <Grid className='project-grid'>
                         <Cell col={4}>
                             <Image src={tsign} alt='Traquer' style={{width: '100%'}}/>
@@ -147,7 +147,7 @@ class Projects extends Component {
 
 
                 {/** SSAAD Party */}
-                <div style={{ backgroundColor: '#fff3e6', width: '100%', margin: 'auto', paddingTop:'1em', paddingBottom: '2em' }}>
+                <div style={{  width: '100%', margin: 'auto', paddingTop:'1em', paddingBottom: '2em' }}>
                     <Grid className='project-grid'>
                         <Cell col={2}>
                             <Image src={ssaad} alt='Volunesia' style={{width: '100%'}}/>

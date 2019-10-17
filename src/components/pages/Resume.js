@@ -12,7 +12,7 @@ import portrait from '../../assets/images/portrait.jpeg';
 class Resume extends Component {
     render() {
         return (
-            <div>
+            <div style={{background: 'white'}}>
                 <Grid>
                     <Cell col={4}>
                         <div style={{ textAlign: 'center', paddingTop: '30px' }}>
