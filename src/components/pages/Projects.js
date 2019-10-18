@@ -108,7 +108,8 @@ class Projects extends Component {
                                         <i> Traqueur </i>
                                     </span>
                                     is simple mobile application that tracks and 
-                                    records a user's movements, then displays their path on a map. This MERN-stack mobile app serves a testament to
+                                    records a user's movements, then displays their path on a map. The information is then stored in MongoDB 
+                                    through a Node.js Server with Express.js. This MERN-stack mobile app serves a testament to
                                     my abilities as a developer and a reminder that nothing is impossible, so long as you put in the effort.
                                 </article>
 
