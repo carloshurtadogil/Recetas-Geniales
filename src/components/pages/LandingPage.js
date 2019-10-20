@@ -1,10 +1,8 @@
 import  React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 import { Cell, Grid } from 'react-mdl';
-import LazyLoad from 'react-lazyload';
 
-import amsterdam from '../../assets/images/amsterdam.JPG';
-
+//Landing page that will serve as the default home page
 class LandingPage extends Component {
     render() {
 
@@ -15,14 +13,12 @@ class LandingPage extends Component {
                     <Cell col={12}>
                         <Grid style={{ justifyContent: 'center' }}>
                             <Cell col={3}>
-                                <LazyLoad height={'100%'} once>
-                                    <Image 
-                                        src={ amsterdam }
-                                        alt='Portrait of Carlos Hurtado'
-                                        className='avatar-img'
-                                        roundedCircle
-                                    />
-                                </LazyLoad>
+                                <Image 
+                                    src='https://d2xovjauh2wbka.cloudfront.net/amsterdam.JPG'
+                                    alt='Portrait of Carlos Hurtado'
+                                    className='avatar-img'
+                                    roundedCircle
+                                />
                             </Cell>
                         </Grid>
 

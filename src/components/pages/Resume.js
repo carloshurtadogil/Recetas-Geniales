@@ -6,20 +6,19 @@ import Education from '../items/Education';
 import Experience from '../items/Experience';
 import Skills from '../items/Skills';
 
-import portrait from '../../assets/images/portrait.jpeg';
-
 /**Resume component that will outline all details from education, experience, etc. */
 class Resume extends Component {
     render() {
         return (
             <div style={{background: 'white'}}>
                 <Grid>
+                    {/**Left Side of Screen holding summary and links */}
                     <Cell col={4}>
                         <div style={{ textAlign: 'center', paddingTop: '30px' }}>
                             <Grid>
                                 <Cell col={12}>
                                     <img 
-                                        src={ portrait }
+                                        src='https://d2xovjauh2wbka.cloudfront.net/portrait.jpeg'
                                         alt='Carlos Hurtado'
                                         style={{ width: '100%', borderRadius: '25%' }}
                                     />
@@ -27,12 +26,17 @@ class Resume extends Component {
                             </Grid>
                         </div>
 
-                        <h2 style={{ paddingTop: '2em' }}>Carlos Hurtado</h2>
+                        <h2 style={{ paddingTop: '1em', textAlign: 'center' }}>Carlos Hurtado</h2>
                         <h4 style={{ color: 'grey' }}>Software Developer</h4>
 
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 
-                        <p>I am a Computer Science graduate from California State University, Long Beach. I love programming, traveling, video games, and going to the gym. As a software developer, I enjoy learning new technologies, building new things, and my passion for creating software solutions to today's problems.</p>
+                        <p>
+                            I am a Computer Science graduate from California State University, Long Beach. 
+                            I love programming, traveling, video games, and going to the gym. As a software developer, 
+                            I enjoy learning new technologies, building new things, and my passion for creating 
+                            software solutions to today's problems.
+                        </p>
 
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 
@@ -48,6 +52,13 @@ class Resume extends Component {
                         
                     </Cell>
 
+
+
+
+
+
+
+                    {/**Right side of screen that holds resume */}
                     <Cell col={8} className='resume-right-col'>
                         <h2>Education</h2>
 

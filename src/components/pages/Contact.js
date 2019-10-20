@@ -1,7 +1,6 @@
 import  React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 import { Cell, Grid, List, ListItem, ListItemContent } from 'react-mdl';
-import grad from '../../assets/images/grad.JPG';
 import LazyLoad from 'react-lazyload';
 
 class Contact extends Component {
@@ -15,7 +14,7 @@ class Contact extends Component {
                             <Cell col={8}>
                                 <LazyLoad height={'100%'} once >
                                     <Image 
-                                        src={ grad }
+                                        src='https://d2xovjauh2wbka.cloudfront.net/grad.JPG'
                                         alt='Grad Photo of Carlos Hurtado'
                                         style={{width: '100%', borderRadius: '15%'}}
                                     />

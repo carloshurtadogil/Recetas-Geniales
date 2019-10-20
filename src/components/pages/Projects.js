@@ -2,27 +2,6 @@ import  React, { Component } from 'react';
 import Image from 'react-bootstrap/Image';
 import { Grid, Cell } from 'react-mdl';
 
-/**All Volunesia Screenshots*/
-import vmain from '../../assets/images/volunesia/v-main.png';
-import vhome from '../../assets/images/volunesia/v-home.png';
-import vprofile from '../../assets/images/volunesia/v-profile.png';
-import vevent from '../../assets/images/volunesia/v-event.png';
-import vsign from '../../assets/images/volunesia/v-sign.png';
-
-/**All Traqueur Screenshots*/
-import tgen from '../../assets/images/traqueur/t-gen.png';
-import thome from '../../assets/images/traqueur/t-home.png';
-import tmain from '../../assets/images/traqueur/t-main.png';
-import tmap from '../../assets/images/traqueur/t-map.png';
-import tsign from '../../assets/images/traqueur/t-sign.png'; 
-
-/**All SSAAD Party Screenshots*/
-import sforest from '../../assets/images/ssaad/s-forest.png';
-import sgame from '../../assets/images/ssaad/s-game.png';
-import smulti from '../../assets/images/ssaad/s-multi.png';
-import splayer from '../../assets/images/ssaad/s-player.png';
-import ssaad from '../../assets/images/ssaad/SSAAD.png';
-
 
 //Component to showcase most recent and proudest accomplishments
 class Projects extends Component {
@@ -33,7 +12,7 @@ class Projects extends Component {
                 <div style={{  width: '100%', margin: 'auto', paddingTop:'1em', paddingBottom: '2em' }}>
                     <Grid className='project-grid'>
                         <Cell col={4}>
-                            <Image src={vsign} alt='Volunesia' style={{width: '100%'}}/>
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/volunesia/v-sign.png' alt='Volunesia' style={{width: '100%'}}/>
                         </Cell>
                     </Grid>
 
@@ -69,18 +48,19 @@ class Projects extends Component {
                         </Cell>
                     </Grid>
 
+                    {/**Images pertaining to volunesia */}
                     <Grid className='project-grid project-img'>
                         <Cell col={3}>
-                            <Image src={vmain} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/volunesia/v-main.png' style={{width: '100%'}} className='zoom' fluid alt='Volunesia Main Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={vhome} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Home Page'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/volunesia/v-home.png' style={{width: '100%'}} className='zoom' fluid alt='Volunesia Home Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={vprofile} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Profile Page'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/volunesia/v-profile.png' style={{width: '100%'}} className='zoom' fluid alt='Volunesia Profile Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={vevent} style={{width: '100%'}} className='zoom' fluid alt='Volunesia Event Page'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/volunesia/v-event.png' style={{width: '100%'}} className='zoom' fluid alt='Volunesia Event Page'  />
                         </Cell>
                     </Grid>
                 </div>
@@ -94,7 +74,7 @@ class Projects extends Component {
                 <div className='project-div' >
                     <Grid className='project-grid'>
                         <Cell col={4}>
-                            <Image src={tsign} alt='Traquer' style={{width: '100%'}}/>
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/traqueur/t-sign.png' alt='Traquer' style={{width: '100%'}}/>
                         </Cell>
                     </Grid>
 
@@ -126,18 +106,20 @@ class Projects extends Component {
                         </Cell>
                     </Grid>
 
+                    
+                    {/**Images pertaining to traqueur */}
                     <Grid className='project-grid project-img'>
                         <Cell col={3}>
-                            <Image src={tmain} style={{width: '100%', borderRadius: '40px'}} className='zoom' fluid alt='Traqueur Main Page'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/traqueur/t-main.png' style={{width: '100%', borderRadius: '40px'}} className='zoom' fluid alt='Traqueur Main Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={thome} style={{width: '100%', borderRadius: '40px'}} className='zoom' fluid alt='Traqueur Home Page'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/traqueur/t-home.png' style={{width: '100%', borderRadius: '40px'}} className='zoom' fluid alt='Traqueur Home Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={tmap} style={{width: '100%', borderRadius: '40px'}} className='zoom' fluid alt='Traqueur Details Page'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/traqueur/t-map.png' style={{width: '100%', borderRadius: '40px'}} className='zoom' fluid alt='Traqueur Details Page'  />
                         </Cell>
                         <Cell col={3}>
-                            <Image src={tgen} style={{width: '100%', borderRadius: '40px'}} className='zoom' fluid alt='Traqueur Account Page'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/traqueur/t-gen.png' style={{width: '100%', borderRadius: '40px'}} className='zoom' fluid alt='Traqueur Account Page'  />
                         </Cell>
                     </Grid>
                 </div>
@@ -151,7 +133,7 @@ class Projects extends Component {
                 <div style={{  width: '100%', margin: 'auto', paddingTop:'1em', paddingBottom: '2em' }}>
                     <Grid className='project-grid'>
                         <Cell col={2}>
-                            <Image src={ssaad} alt='Volunesia' style={{width: '100%'}}/>
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/ssaad/SSAAD.png' alt='Volunesia' style={{width: '100%'}}/>
                         </Cell>
                     </Grid>
 
@@ -196,19 +178,19 @@ class Projects extends Component {
 
                     <Grid className='project-grid project-img'>
                         <Cell col={6}>
-                            <Image src={sforest} style={{width: '100%'}} className='zoom-s' fluid alt='SSAAD Forest'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/ssaad/s-forest.png' style={{width: '100%'}} className='zoom-s' fluid alt='SSAAD Forest'  />
                         </Cell>
                         <Cell col={6}>
-                            <Image src={splayer} style={{width: '100%'}} className='zoom-s' fluid alt='SSAAD Player'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/ssaad/s-player.png' style={{width: '100%'}} className='zoom-s' fluid alt='SSAAD Player'  />
                         </Cell>
                     </Grid>
 
                     <Grid className='project-grid project-img'>
                         <Cell col={6}>
-                            <Image src={smulti} style={{width: '100%'}} className='zoom-s' fluid alt='SSAAD Multiplayer View'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/ssaad/s-multi.png' style={{width: '100%'}} className='zoom-s' fluid alt='SSAAD Multiplayer View'  />
                         </Cell>
                         <Cell col={6}>
-                            <Image src={sgame} style={{width: '100%'}} className='zoom-s' fluid alt='SSAAD Minigame View'  />
+                            <Image src='https://d2xovjauh2wbka.cloudfront.net/ssaad/s-game.png' style={{width: '100%'}} className='zoom-s' fluid alt='SSAAD Minigame View'  />
                         </Cell>
                     </Grid>
                 </div>
