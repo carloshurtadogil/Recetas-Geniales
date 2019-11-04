@@ -8,8 +8,9 @@ const languages = [
     { id: 3, value: 'Java' },
     { id: 4, value: 'JavaScript' },
     { id: 5, value: 'Perl' },
-    { id: 6, value: 'SQL' },
-    { id: 7, value: 'NoSQL' }
+    { id: 6, value: 'Python' },
+    { id: 7, value: 'SQL' },
+    { id: 8, value: 'NoSQL' }
 
 ];
 
