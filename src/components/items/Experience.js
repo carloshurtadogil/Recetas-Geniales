@@ -72,7 +72,7 @@ const siemens = [
 const tsp = [
     { id: 1, value: 'Processed cash and card payments for food service.' },
     { id: 2, value: 'Received orders and tended to customer needs and/or complaints in a friendly manner.' },
-    { id: 3, value: 'Developed a clock-in system using Java, SQL, and a Raspberry Pi to assist the managers with counting worker hours and calculate their payments.' }
+    { id: 3, value: 'Developed a clock-in system using Java, SQL, and a Raspberry Pi to assist the managers with counting worker hours and calculating their respective payments.' }
 ];
 /*
 <Grid>
