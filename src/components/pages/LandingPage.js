@@ -23,9 +23,11 @@ class LandingPage extends Component {
                         </Grid>
 
                         <div className='banner-text'>
-                            <h1>Software Developer</h1>
+                            <h1>Carlos Hurtado</h1>
 
                             <hr />
+
+                            <h3>Software Developer</h3>
 
                             <div className='social-links'>
                                 <Grid style={{ justifyContent: 'center' }}>

@@ -23,6 +23,10 @@
   font-weight: bold;
 }
 
+.banner-text h3 {
+  color: white;
+}
+
 .banner-text hr {
   border-top: 5px dotted white;
   margin: auto;
