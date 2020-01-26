@@ -27,9 +27,14 @@ class Experience extends Component {
                 <Row>
                     <Col sm={4}>
                         <ListGroup>
+                            <ListGroup.Item action variant="dark" href="#first-american-trust">
+                                First American Trust
+                            </ListGroup.Item>
+
                             <ListGroup.Item action variant="dark" href="#siemens-plm-software">
                                 Siemens PLM Software
                             </ListGroup.Item>
+
                             <ListGroup.Item action variant="dark" href="#tsp">
                                 Tacos San Pedro
                             </ListGroup.Item>
@@ -38,6 +43,13 @@ class Experience extends Component {
 
                     <Col sm={8}>
                         <Tab.Content>
+                            <Tab.Pane eventKey="#first-american-trust">
+                                <h3 style={{ marginTop: '0px' }}>First American Trust</h3>
+                                <h5>Software Engineer | February 2020</h5>
+
+                                { this.renderLists(first_american_trust) }
+                            </Tab.Pane>
+
                             <Tab.Pane eventKey="#siemens-plm-software">
                                 <h3 style={{ marginTop: '0px' }}>Siemens PLM Software</h3>
                                 <h5>Lead IT Intern | September 2017 - June 2019</h5>
@@ -62,6 +74,8 @@ class Experience extends Component {
 export default Experience;
 
 //All job details for all my work experience
+const first_american_trust = [];
+
 const siemens = [
     { id: 1, value: 'Maintained and provided support for the various applications through tools, SQL statements (Ingres DB), and Perl scripts.' },
     { id: 2, value: 'Developed and maintained a new team website using Vue.js.' },
