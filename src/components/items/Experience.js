@@ -23,7 +23,7 @@ class Experience extends Component {
 
     render() {
         return (
-            <Tab.Container id="work-experience" defaultActiveKey="#siemens-plm-software">
+            <Tab.Container id="work-experience" defaultActiveKey="#first-american-trust">
                 <Row>
                     <Col sm={4}>
                         <ListGroup>

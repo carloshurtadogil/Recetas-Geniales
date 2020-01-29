@@ -9,8 +9,9 @@ const languages = [
     { id: 4, value: 'JavaScript' },
     { id: 5, value: 'Perl' },
     { id: 6, value: 'Python' },
-    { id: 7, value: 'SQL' },
-    { id: 8, value: 'NoSQL' }
+    { id: 7, value: 'Ruby' },
+    { id: 8, value: 'SQL' },
+    { id: 9, value: 'NoSQL' }
 
 ];
 
@@ -25,8 +26,9 @@ const frameworks = [
     { id: 7, value: 'Postman' },
     { id: 8, value: 'React' },
     { id: 9, value: 'React Native' },
-    { id: 10, value: 'Spring' },
-    { id: 11, value: 'Vue.js' },
+    { id: 10, value: 'Ruby on Rails' },
+    { id: 11, value: 'Spring' },
+    { id: 12, value: 'Vue.js' },
 ];
 
 //All software I have used over the years

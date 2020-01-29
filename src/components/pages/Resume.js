@@ -5,8 +5,8 @@ import { Cell, Grid } from 'react-mdl';
 import Education from '../items/Education';
 import Experience from '../items/Experience';
 import Skills from '../items/Skills';
-import pdf from '../../assets/Carlos_Hurtado_Resume.pdf';
-import icon from '../../assets/logos/pdf.ico';
+//import pdf from '../../assets/Carlos_Hurtado_Resume.pdf';
+//import icon from '../../assets/logos/pdf.ico';
 
 /**Resume component that will outline all details from education, experience, etc. */
 class Resume extends Component {
@@ -45,6 +45,7 @@ class Resume extends Component {
                         <h5>Email</h5>
                         <a href='mailto:carloshurtado219@gmail.com'>carloshurtado219@gmail.com</a>
 
+                        {/* 
                         <h5>Resume</h5>
                         <a href={pdf}
                            download
@@ -53,6 +54,7 @@ class Resume extends Component {
                            >
                             Carlos_Hurtado_Resume      <span><img src={icon} alt='pdf' height='25' width='25' /></span>
                         </a>
+                        */}
 
                         <h5>Web</h5>
                         <Link to='/'>carlos-hurtado.com</Link>
