@@ -61,30 +61,24 @@ class Resume extends Component {
 
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
                     </Cell>
-                    
+
                     {/**Right side of screen that holds resume */}
                     <Cell col={8} className='resume-right-col'>
                         <h2>Education</h2>
 
-                        <Education 
+                        <Education
                             degree='B.S. Computer Science'
                             start='August 2015'
                             end='May 2019'
                             schoolName='California State University, Long Beach'
-                            schoolDescription='Software Engineering, Object-Oriented Programming, Data Structures and Algorithms, Calculus, Discrete Mathematics, Linear Algebra, Physics, Database Fundamentals, Computer Architecture'
+                            relevantCoursework='Software Engineering, Object-Oriented Programming, Data Structures and Algorithms, Calculus, Discrete Mathematics, Linear Algebra, Physics, Database Fundamentals, Computer Architecture'
                         />
 
                         <hr style={{ borderTop: '3px solid #e22947' }} />
 
                         <h2>Experience</h2>
 
-                        <Experience 
-                            start='September 2017'
-                            end='June 2019'
-                            jobName='Siemens PLM Software'
-                            title='Lead IT Intern'
-                            description='siemens'
-                        />
+                        <Experience />
 
                         <hr style={{ borderTop: '3px solid #e22947' }} />
                         
