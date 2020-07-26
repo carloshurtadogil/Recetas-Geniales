@@ -5,8 +5,6 @@ import { Cell, Grid } from 'react-mdl';
 import Education from '../items/Education';
 import Experience from '../items/Experience';
 import Skills from '../items/Skills';
-//import pdf from '../../assets/Carlos_Hurtado_Resume.pdf';
-//import icon from '../../assets/logos/pdf.ico';
 
 /**Resume component that will outline all details from education, experience, etc. */
 class Resume extends Component {
@@ -62,15 +60,8 @@ class Resume extends Component {
                         <Badge variant="warning">Hosted on AWS</Badge>
 
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-                        
                     </Cell>
-
-
-
-
-
-
-
+                    
                     {/**Right side of screen that holds resume */}
                     <Cell col={8} className='resume-right-col'>
                         <h2>Education</h2>
