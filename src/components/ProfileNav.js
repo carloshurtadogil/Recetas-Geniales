@@ -24,20 +24,20 @@ const ProfileNav = () => {
 
       <Navbar.Collapse style={{ color: 'white' }}>
         <Nav className="mr-auto flex-end">
-          <Nav.Link href='/' className='nav-link'>
-            Home
+          <Nav.Link>
+            <Link to='/' className='nav-link'>Home</Link>
           </Nav.Link>
 
-          <Nav.Link href='https://www.carlos-hurtado.com/resume' className='nav-link'>
-            Resume
+          <Nav.Link>
+            <Link to='/resume' className='nav-link'>Resume</Link>
           </Nav.Link>
 
-          <Nav.Link href='https://www.carlos-hurtado.com//projects' className='nav-link'>
-            Projects
+          <Nav.Link>
+            <Link to='/projects' className='nav-link'>Projects</Link>
           </Nav.Link>
 
-          <Nav.Link href='https://www.carlos-hurtado.com//contact' className='nav-link'>
-            Contact
+          <Nav.Link>
+            <Link to='/contact' className='nav-link'>Contact</Link>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
