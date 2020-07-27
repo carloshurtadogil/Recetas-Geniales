@@ -40,7 +40,7 @@ const Experience = () => {
           <Tab.Content>
             <Tab.Pane eventKey="#first-american-trust">
               <h3 style={{ marginTop: '0px' }}>First American Trust</h3>
-              <h5>Software Engineer | February 2020</h5>
+              <h5>Software Engineer | February 2020 - Present</h5>
 
               { renderList(firstAmericanTrust) }
             </Tab.Pane>

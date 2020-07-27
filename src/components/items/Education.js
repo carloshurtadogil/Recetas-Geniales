@@ -2,7 +2,6 @@ import React from 'react';
 import { Cell, Grid } from 'react-mdl';
 
 const Education = (props) => {
-
   return (
     <Grid>
       <Cell col={4}>

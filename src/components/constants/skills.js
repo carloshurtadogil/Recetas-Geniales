@@ -1,4 +1,4 @@
-//All languages I have a great understanding of
+//All languages of which I have a great understanding
 export const languages = [
   { id: 1, value: 'C#' },
   { id: 2, value: 'HTML/CSS' },
@@ -24,8 +24,9 @@ export const frameworks = [
   { id: 8, value: 'React' },
   { id: 9, value: 'React Native' },
   { id: 10, value: 'Ruby on Rails' },
-  { id: 11, value: 'Spring' },
-  { id: 12, value: 'Vue.js' },
+  { id: 11, value: 'Semantic UI React' },
+  { id: 12, value: 'Spring' },
+  { id: 13, value: 'Vue.js' },
 ];
 
 //All software I have used over the years
