@@ -28,15 +28,15 @@ const ProfileNav = () => {
             Home
           </Nav.Link>
 
-          <Nav.Link href='/resume' className='nav-link'>
+          <Nav.Link href='https://www.carlos-hurtado.com/resume' className='nav-link'>
             Resume
           </Nav.Link>
 
-          <Nav.Link href='/projects' className='nav-link'>
+          <Nav.Link href='https://www.carlos-hurtado.com//projects' className='nav-link'>
             Projects
           </Nav.Link>
 
-          <Nav.Link href='/contact' className='nav-link'>
+          <Nav.Link href='https://www.carlos-hurtado.com//contact' className='nav-link'>
             Contact
           </Nav.Link>
         </Nav>
