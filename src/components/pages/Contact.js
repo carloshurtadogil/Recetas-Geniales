@@ -21,7 +21,7 @@ const Contact = () => {
             </Cell>
           </Grid>
           <p style={{ margin: 'auto', paddingTop: '1em', width: '75%' }}>
-            I am happily employed as of right now. However, my inbox is always open. Whether to talk or just to say hi, I'll try my best to answer your email!
+            My inbox is always open. Whether to talk or just to say hi, I'll try my best to answer your email!
           </p>
         </Cell>
 

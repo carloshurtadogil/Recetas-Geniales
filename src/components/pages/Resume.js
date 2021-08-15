@@ -2,7 +2,7 @@ import  React from 'react';
 import Badge  from 'react-bootstrap/Badge';
 import { Link } from 'react-router-dom';
 import { Cell, Grid } from 'react-mdl';
-import { csulb } from '../constants/education';
+import { csulb, csulb_honors } from '../constants/education';
 import Education from '../items/Education';
 import Experience from '../items/Experience';
 import Skills from '../items/Skills';
@@ -72,6 +72,7 @@ const Resume = () => {
             end={ csulb.end }
             schoolName={ csulb.schoolName }
             relevantCoursework={ csulb.relevantCoursework }
+            honors={ csulb_honors }
           />
 
           <hr style={{ borderTop: '3px solid #e22947' }} />

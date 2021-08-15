@@ -6,6 +6,10 @@ export const csulb = {
   relevantCoursework: 'Software Engineering, Object-Oriented Programming, Data Structures and Algorithms, Calculus, Discrete Mathematics, Linear Algebra, Physics, Database Fundamentals, Computer Architecture'
 };
 
+export const csulb_honors = {
+  spring: "Dean's List",
+}
+
 export const uci = {
   degree: 'M.S. Computer Science',
   start: 'September 2020',

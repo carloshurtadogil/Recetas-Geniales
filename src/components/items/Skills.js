@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, ListGroup, Row, Tab } from 'react-bootstrap';
-import { languages, frameworks, software } from '../constants/skills';
+import { languages, frameworks, tools } from '../constants/skills';
 
 //Skills component for all skills
 const Skills = () => {
@@ -33,8 +33,8 @@ const Skills = () => {
                 <ListGroup.Item action variant="dark" href="#frameworks">
                     Frameworks/APIs
                 </ListGroup.Item>
-                <ListGroup.Item action variant="dark" href="#software">
-                    Software
+                <ListGroup.Item action variant="dark" href="#tools">
+                    Tools
                 </ListGroup.Item>
             </ListGroup>
         </Col>
@@ -53,10 +53,10 @@ const Skills = () => {
               { renderList(frameworks) }
             </Tab.Pane>
 
-            <Tab.Pane eventKey="#software">
-              <h3 style={{ marginTop: '0px' }}>Software</h3>
+            <Tab.Pane eventKey="#tools">
+              <h3 style={{ marginTop: '0px' }}>Tools</h3>
 
-              { renderList(software) }
+              { renderList(tools) }
             </Tab.Pane>
           </Tab.Content>
         </Col>
