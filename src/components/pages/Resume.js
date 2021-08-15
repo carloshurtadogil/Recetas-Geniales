@@ -1,86 +1,94 @@
-import  React, { Component } from 'react';
+import  React from 'react';
 import Badge  from 'react-bootstrap/Badge';
 import { Link } from 'react-router-dom';
 import { Cell, Grid } from 'react-mdl';
+import { csulb } from '../constants/education';
 import Education from '../items/Education';
 import Experience from '../items/Experience';
 import Skills from '../items/Skills';
 
-import portrait from '../../assets/images/portrait.jpeg';
-
 /**Resume component that will outline all details from education, experience, etc. */
-class Resume extends Component {
-    render() {
-        return (
-            <div>
-                <Grid>
-                    <Cell col={4}>
-                        <div style={{ textAlign: 'center', paddingTop: '30px' }}>
-                            <Grid>
-                                <Cell col={12}>
-                                    <img 
-                                        src={ portrait }
-                                        alt='Carlos Hurtado'
-                                        style={{ width: '100%', borderRadius: '25%' }}
-                                    />
-                                </Cell>
-                            </Grid>
-                        </div>
+const Resume = () => {
+  return (
+    <div style={{background: 'white'}}>
+      <Grid>
+        {/**Left Side of Screen holding summary and links */}
+        <Cell col={4}>
+          <div style={{ textAlign: 'center', paddingTop: '30px' }}>
+            <Grid>
+              <Cell col={12}>
+                <img 
+                 src='https://d2xovjauh2wbka.cloudfront.net/portrait.jpeg'
+                 alt='Carlos Hurtado'
+                 style={{ width: '100%', borderRadius: '25%' }}
+                />
+              </Cell>
+            </Grid>
+          </div>
 
-                        <h2 style={{ paddingTop: '2em' }}>Carlos Hurtado</h2>
-                        <h4 style={{ color: 'grey' }}>Software Developer</h4>
+          <h2 style={{ paddingTop: '1em', textAlign: 'center' }}>Carlos Hurtado</h2>
+          <h4 style={{ color: 'grey' }}>Software Developer</h4>
 
-                        <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+          <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 
-                        <p>I am a Computer Science graduate from California State University, Long Beach. I love programming, traveling, video games, and going to the gym. As a software developer, I enjoy learning new technologies, building new things, and my passion for creating software solutions to today's problems.</p>
+          <p>
+            I am a Computer Science graduate from California State University, Long Beach. 
+            I love programming, traveling, video games, and going to the gym. As a software developer, 
+            I enjoy learning new technologies, building new things, and my passion for creating 
+            software solutions to today's problems.
+          </p>
 
-                        <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+          <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 
-                        <h5>Email</h5>
-                        <Link to='mailto:carloshurtado219@gmail.com'>carloshurtado219@gmail.com</Link>
+          <h5>Email</h5>
+          <a href='mailto:carloshurtado219@gmail.com'>carloshurtado219@gmail.com</a>
 
-                        <h5>Web</h5>
-                        <Link to='/'>carlos-hurtado.com</Link>
-                        <br/>
-                        <Badge variant="warning">Hosted on AWS</Badge>
+          {/* 
+          <h5>Resume</h5>
+          <a href={pdf}
+            download
+            target='_blank' 
+            rel='noopener noreferrer'
+            >
+            Carlos_Hurtado_Resume      <span><img src={icon} alt='pdf' height='25' width='25' /></span>
+          </a>
+          */}
 
-                        <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-                        
-                    </Cell>
+          <h5>Web</h5>
+          <Link to='/'>carlos-hurtado.com</Link>
+          <br/>
+          <Badge variant="warning">Hosted on AWS</Badge>
 
-                    <Cell col={8} className='resume-right-col'>
-                        <h2>Education</h2>
+          <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+        </Cell>
 
-                        <Education 
-                            degree='B.S. Computer Science'
-                            start='August 2015'
-                            end='May 2019'
-                            schoolName='California State University, Long Beach'
-                            schoolDescription='Software Engineering, Object-Oriented Programming, Data Structures and Algorithms, Calculus, Discrete Mathematics, Linear Algebra, Physics, Database Fundamentals, Computer Architecture'
-                        />
+        {/**Right side of screen that holds resume */}
+        <Cell col={8} className='resume-right-col'>
+          <h2>Education</h2>
 
-                        <hr style={{ borderTop: '3px solid #e22947' }} />
+          <Education
+            degree={ csulb.degree }
+            start={ csulb.start }
+            end={ csulb.end }
+            schoolName={ csulb.schoolName }
+            relevantCoursework={ csulb.relevantCoursework }
+          />
 
-                        <h2>Experience</h2>
+          <hr style={{ borderTop: '3px solid #e22947' }} />
 
-                        <Experience 
-                            start='September 2017'
-                            end='June 2019'
-                            jobName='Siemens PLM Software'
-                            title='Lead IT Intern'
-                            description='siemens'
-                        />
+          <h2>Experience</h2>
 
-                        <hr style={{ borderTop: '3px solid #e22947' }} />
-                        
-                        <h2>Key Skills</h2>
+          <Experience />
 
-                        <Skills/>
-                    </Cell>
-                </Grid>
-            </div>
-        );
-    };
+          <hr style={{ borderTop: '3px solid #e22947' }} />
+        
+          <h2>Key Skills</h2>
+
+          <Skills/>
+        </Cell>
+      </Grid>
+    </div>
+  );
 };
 
 export default Resume;
