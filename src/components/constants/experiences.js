@@ -1,11 +1,12 @@
 export const firstAmericanTrust = [
-  { id: 0, value: "Designed, developed, maintained an essential middleware application to process and forward requests from multiple sources to their appropriate destinations, including wires, checks, and account information, all using a suite of Azure services and .NET." },
+  { id: 0, value: "Designed, developed, maintained an essential middleware application to process and forward requests from multiple sources to their appropriate destinations, all using a suite of Azure services and .NET." },
   { id: 1, value: "Worked in an Agile environment to complete various stories through one-week sprints, working in conjunction with other developers and engineers from external vendors to develop new features, systems, and various other assignments." },
-  { id: 2, value: "Developed features for a banking-management tool using React.js and Ruby on Rails." },
+  { id: 2, value: "Developed features, such as a ‘News’ page and widgets, for a banking-management tool using React.js and Ruby on Rails." },
   { id: 3, value: "Tested and updated existing and new applications while using own knowledge and expertise to suggests on best ways to make improvements." },
   { id: 4, value: "Implemented CI/CD pipeline to code repository to perform security analysis, tests, and deployment to production and development environments." },
   { id: 5, value: "Designed Terraform templates for API Management, Service Bus, and Azure Functions for easy and manageable deployments to Azure." },
-  { id: 6, value: "Worked with product manager and stakeholders to resolve production incidents, write scripts for data fixes, and deployed hot-fixes to help maintain a stable product." },
+  { id: 6, value: "Created and maintained multiple API endpoints for keeping track of client account data, wire transactions information, and other critical business information using Azure Functions, ServiceBus, and KeyVault for the backend and API Management for the front-end."},
+  { id: 7, value: "Worked with product manager and stakeholders to resolve production incidents, write scripts for data fixes, and deployed hot-fixes to help maintain a stable product." },
 ];
 
 export const siemens = [

@@ -27,6 +27,10 @@
   color: white;
 }
 
+.banner-text h5 {
+  color: whitesmoke;
+}
+
 .banner-text hr {
   border-top: 5px dotted white;
   margin: auto;
