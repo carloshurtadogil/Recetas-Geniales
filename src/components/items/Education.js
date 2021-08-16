@@ -10,6 +10,23 @@ const Education = (props) => {
       <p></p>
     );
   });*/
+  const renderList = (list) => {
+    if (list) {
+      return (
+        <ul>
+          {list.map((item) => {
+            return (
+              <li key={item.id}>
+                {item.semester} - {item.year}
+              </li>
+            );
+          })}
+        </ul>
+      );
+    } else {
+      return null;
+    }
+  }
 
   return (
     <Grid>
@@ -24,8 +41,8 @@ const Education = (props) => {
           <h6>Relevant Coursework</h6>
           <p>{ props.relevantCoursework }</p>
 
-          {/*<h6>Honors</h6>
-          <p>{ props.honors[0] }</p>*/}
+          <h6>Honors</h6>
+          <p>{ renderList(props.honors) }</p>
       </Cell>
   </Grid>
   );

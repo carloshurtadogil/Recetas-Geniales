@@ -6,9 +6,11 @@ export const csulb = {
   relevantCoursework: 'Software Engineering, Object-Oriented Programming, Data Structures and Algorithms, Calculus, Discrete Mathematics, Linear Algebra, Physics, Database Fundamentals, Computer Architecture'
 };
 
-export const csulb_honors = {
-  spring: "Dean's List",
-}
+export const csulb_honors = [
+  { id: 0, semester: 'Spring', year: 2019 },
+  { id: 1, semester: 'Fall', year: 2018 },
+  { id: 2, semester: 'Spring', year: 2018 },
+];
 
 export const uci = {
   degree: 'M.S. Computer Science',
